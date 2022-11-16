@@ -3,3 +3,18 @@
     padding: 0%;
     margin: 0%;
 }
+body {
+    background-image: url(../img/background_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   }
+#main_div{
+    width: 90%;
+    height: 90vh;
+    border: 0px solid aliceblue;
+    margin-top: 3%;
+    margin-left: 5%;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
