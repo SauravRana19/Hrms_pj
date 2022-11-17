@@ -17,6 +17,7 @@ body {
     margin-left: 5%;
     background-color: #EAF1FB;
     border-radius: 30px;
+    position: relative;
 }
 .Top_icons{
     width: 10%;
@@ -39,4 +40,129 @@ body {
     margin-top: 10px;
     right: 50px;
     height: 10px;
+}
+/* Sidebar */
+.sidebar {
+    position: relative;
+    top: 0px;
+    width: 25%;
+    z-index: 1;
+    }
+    
+    @media (max-width: 991.98px) {
+    .sidebar {
+    width: 100%;
+    }
+    }
+    .sidebar .active {
+    border-radius: 5px;
+
+    }
+    
+    .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+.list-group-item {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    background-color: #EAF1FB;
+    border: none;
+    border-radius: 20px;
+}
+
+.list-group-item:hover{
+    background-color: #0560FD;
+    color: #EAF1FB;
+
+}
+#span_1{
+    margin-left: 20px;
+
+}
+.position-sticky{
+    background-color: #EAF1FB;
+    line-height: 40px;
+
+}
+
+
+
+.innerbox_1{
+
+    border: 0px solid black;
+    border-radius: 20px 0 0 20px;
+    background-color: #F9FBFE;
+    height: 130px;
+    width: 18.3%;
+    margin-left: 25%;
+    position: absolute;
+    display: inline-block;
+    bottom: 65%;
+
+}
+.innerbox_2{
+
+    border: 0px solid black;
+    background-color: #F9FBFE;
+    height: 130px;
+    width: 18.4%;
+    margin-left: 43.5%;
+    position: absolute;
+    display: inline-block;
+    bottom: 65%;
+
+}
+.innerbox_3{
+
+    border: 0px solid black;
+    background-color: #F9FBFE;
+    height: 130px;
+    width: 18.3%;
+    margin-left: 62%;
+    position: absolute;
+    display: inline-block;
+    bottom: 65%;
+
+}
+.innerbox_4{
+    border: 0px solid black;
+    border-radius: 0 20px 20px 0;
+    background-color: #F9FBFE;
+    height: 130px;
+    width: 18%;
+    margin-left: 80.5%;
+    position: absolute;
+    display: inline-block;
+    bottom: 65%;
+
+}
+.innerbox_5{
+    border: 0px solid black;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #F9FBFE;
+    height: 40vh;
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    display: inline-block;
+    bottom: 15%;
+
+}
+.innerbox_6{
+    border: 0px solid black;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #F9FBFE;
+    height: 40vh;
+    width: 23%;
+    margin-left: 76%;
+    position: absolute;
+    display: inline-block;
+    bottom: 15%;
+
 }
