@@ -46,7 +46,6 @@ body {
     position: relative;
     top: 0px;
     width: 25%;
-    z-index: 1;
     }
     
     @media (max-width: 991.98px) {
@@ -68,7 +67,7 @@ body {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     }
 .list-group-item {
-    margin-top: 10px;
+    margin-top: 5px;
     position: relative;
     display: block;
     background-color: #EAF1FB;
@@ -83,11 +82,11 @@ body {
 }
 #span_1{
     margin-left: 20px;
-
 }
+
 .position-sticky{
     background-color: #EAF1FB;
-    line-height: 40px;
+    line-height: 30px;
 
 }
 
@@ -103,7 +102,7 @@ body {
     margin-left: 25%;
     position: absolute;
     display: inline-block;
-    bottom: 65%;
+    bottom: 57%;
 
 }
 .innerbox_2{
@@ -115,7 +114,7 @@ body {
     margin-left: 43.5%;
     position: absolute;
     display: inline-block;
-    bottom: 65%;
+    bottom: 57%;
 
 }
 .innerbox_3{
@@ -127,7 +126,7 @@ body {
     margin-left: 62%;
     position: absolute;
     display: inline-block;
-    bottom: 65%;
+    bottom: 57%;
 
 }
 .innerbox_4{
@@ -139,7 +138,7 @@ body {
     margin-left: 80.5%;
     position: absolute;
     display: inline-block;
-    bottom: 65%;
+    bottom: 57%;
 
 }
 .innerbox_5{
@@ -151,7 +150,7 @@ body {
     margin-left: 25%;
     position: absolute;
     display: inline-block;
-    bottom: 15%;
+    bottom: 10%;
 
 }
 .innerbox_6{
@@ -163,6 +162,6 @@ body {
     margin-left: 76%;
     position: absolute;
     display: inline-block;
-    bottom: 15%;
+    bottom: 10%;
 
 }
