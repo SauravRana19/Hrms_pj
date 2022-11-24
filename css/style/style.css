@@ -10,104 +10,46 @@ body {
 
    }
 .main_div{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 95%;
+    margin: 30px 0px 0px 30px;
     height: 90vh;
     border-radius: 15px;
      background: rgba(255, 255, 255, 0.07); 
     box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-    backdrop-filter: blur(2.7px);
-    -webkit-backdrop-filter: blur(2.7px);
     border: 1px solid rgba(255, 255, 255, 0.37);
     background-image: linear-gradient(to bottom, #ffffff, #f0f0f073, #e1e1e147, #d2d2d24a, #c4c4c45c);
 }
+.heading{
+    margin-top: 10px;
+    width: 100%;
+    height: 10vh;
+    background-color: #ffffff;
+}
+.responsive_img{
+    width: 10%;
+    height: auto;
 
 }
-nav {
-    margin-top: 20px;
+.navbar-nav.nav-item.li{
+    display:  inline;
 }
-
-.navbar-toggler {
-
-    position: absolute;
-    top: 90px;
-    
-    
+.middle_div{
+    width: auto;
+    height: 78vh;
+   
 }
-
-
-
-@media (min-width: 991.98px) {
-    main {
-        padding-left: 240px;
-    }
-}
-
-@media screen and (min-width: 80px) {
-    .first_cont {
-
-        margin-top: 30px;
-    }
-}
-
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    top: 0;
-    background-size: cover;
-    padding: 58px 0 0;
-    width: 20% ;
-    z-index: 600;
-    --bs-bg-opacity: 0;
-}
-
-@media (max-width: 991.98px) {
-    .sidebar {
-        width: 100%;
-    }
-}
-#sidebar.active{
-    background-color: #3783f5;
+.slid_div{
+    margin:2% 0px 0px 2%;
+    width: 20%;
+    height: 60vh;
     
 }
-
-.list-group-item {
-    width: 80%;
-    line-height: 30px;
-    background-color: unset;
-    border: none;
-}
-
-.list-group-item-action:hover {
-    border-radius: 5px;
-    background-color: #3783f5;
-    color: #F6F8FA;
-    border: none;
-}
-
-/* .sidebar-sticky {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: calc(100vh - 48px);
-    padding-top: 0.5rem;
-    /* Scrollable contents if viewport is shorter than content. */
-/* } */ */
-
-
-
-.fixed-top {
-    left: unset;
-    --bs-bg-opacity: -3;
-}
-
 .first_cont {
-    width: 71%;
+    width: 73.5%;
     position: absolute;
-    top: 14%;
+    top: 19%;
     right: 40px;
-    --bs-bg-opacity: 0;
-    height: 61vh;
+    height: 60vh;
     overflow-y: auto;
 }
 .first_cont::-webkit-scrollbar {
@@ -116,8 +58,8 @@ nav {
     }  
 .first_cont .col-md-3 {
     padding-top: 15px;
-    height: 90px;
-    background-color: #F6F8FA;
+    height: 15vh;
+    background-color: #ffffff;
     background-size: cover;
     border-left: #CFEBFF 1px solid;
     text-align: center;
@@ -125,18 +67,83 @@ nav {
 
 .first_cont .col-md-3:hover {
     background-color: #4289f3;
-    color: #F6F8FA;
+    color: #ffffff;
     height: 95px;
    
 }
 .second_row .col-md-8 {
     border-right:  #CFEBFF 1px solid;
     height: 40vh;
-    background-color: #F6F8FA;  
+    background-color: #ffffff;  
 
 }
 .second_row .col-md-4 {
     border-left: #fff5cf 1px solid;
     height: 40vh;
-    background-color: #F6F8FA;  
+    background-color: #ffffff;  
+}
+.third_row .col-md-8 {
+    border-right:  #CFEBFF 1px solid;
+    height: 40vh;
+    background-color: #ffffff;  
+
+}
+.third_row .col-md-4 {
+    border-left: #fff5cf 1px solid;
+    height: 40vh;
+    background-color: #ffffff;  
+}
+/* / */
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    /* height: 60vh; */
+    z-index: 1;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    #sidebarCollapse {
+       visibility: hidden;
+    }
+}
+/* @media screen and (max-width: 992px){
+    .slid_div{
+        display: none;
+    }
+} */
+    
+.list-group-item {
+    background-color: unset;
+    border: none;
+    text-align: center;
+   
+}
+
+.list-group-item-action:hover {
+    border-radius: 5px;
+    background-color: #3783f5;
+    color: #F6F8FA;
+    border: none;
 }

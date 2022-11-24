@@ -6,122 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRMS</title>
 
-      <!-- Bootstrap_file_link-->
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+<!-- Bootstrap_file_link-->
+<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
-    <!-- CSS_file_link-->
-    <link rel="stylesheet" href="css/style/style.css">
+<!-- CSS_file_link-->
+<link rel="stylesheet" href="css/style/style.css">
 
-      <!-- Jquery_link-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Jquery_link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Font_Awesome_link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!-- Font_Awesome_link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-
+<!-- java Script link-->
+<script src="js/java_script/java_script.js"></script>
 </head>
+
 <body>
-    <section>
-        <div class="container main_div">
-          <header>
-            <!-- Sidebar -->
-            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
-              
-                <div class="position-sticky">
-                    <div class="list-group list-group-flush mx-3 mt-4">
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-house me-3"></i><span>Home</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-file-invoice me-3"></i><span>Invoices</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-users me-3"></i><span>Clients</span></a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-tag me-3"></i><span>Products</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-message me-3"></i><span>Messages</span></a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-sharp fa-solid fa-gear me-3"></i><span>Setting</span></a>
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-circle-question me-3"></i><span>Helps</span></a>
-
-
-                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                                class="fa-solid fa-right-from-bracket me-3"></i><span>Logout</span></a>
+<section>
+    <!-- Main div-->
+    <div class="main_div">
+        <header>
+            <div class="heading rounded">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-10 ">
+                            <nav class="navbar navbar-expand-lg rounded">
+                                <img src="../Hrms_projt/css/img/logo.png" class="responsive_img" style="height: 6vh; width: 10%;" alt="hrms_logo" >
+                            <div class="container-fluid">
+                                    <button type="button" id="sidebarCollapse" class="btn btn-info mt-3 pl-3" >
+                                        <i class="fas fa-align-left "></i>                                   
+                                    </button>
+                            </nav>
+                            <!-- <div id="content">
+                                <nav class="navbar navbar-expand-lg ">
+                                    <div class="container-fluid">
+                                        <button type="button" id="sidebarCollapse" class="btn btn-info" >
+                                            <i class="fas fa-align-left"></i>                                   
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div> -->
+                        </div>
+                            <div class="col-sm-2">
+                                <nav class="navbar navbar-expand rounded">
+                                    <ul class="navbar-nav" >
+                                        <li class="nav-item " >
+                                            <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#"
+                                                id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <i class="fas fa-bell"></i>
+                                                <span class="badge rounded-pill badge-notification bg-light">1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="25px" 
+                                                      style="margin-top: 10px;">      
+                                        </li>
+                                    </ul>
+                                </nav> 
+                            </div>                           
                     </div>
                 </div>
-            </nav>
-            <!-- Sidebar -->
-
-            <!-- Navbar -->
-            <nav id="main-navbar" class="navbar navbar-expand-lg">
-                <!-- Container wrapper -->
-                <div class=" container">
-                    <!-- Toggle button -->
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-                    aria-label="Toggle navigation" >
-                    <i class="fas fa-bars"></i>
-                </button>
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#">
-                        <img src="../Hrms_projt/css/img/logo.png" style="height: 7vh;" alt="hrms_logo"
-                            loading="lazy" />
-                    </a>
-                    <!-- Right links -->
-                    <ul class="navbar-nav ms-auto d-flex flex-row">
-                        <!-- Notification dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="fas fa-bell"></i>
-                                <span class="badge rounded-pill badge-notification bg-danger">1</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Some news</a></li>
-                                <li><a class="dropdown-item" href="#">Another news</a></li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </header>
+        <!-- Slider Section-->
+        <section>
+            <div class="middle_div">
+                <div class="slid_div rounded">          
+                    <div class="wrapper">
+                        <!-- Sidebar -->
+                        <nav id="sidebar">
+                            <div class="sidebar-header">
+                                
+                            </div>
+                    
+                            <ul class="list-unstyled components">
+                                
+                                <li class="active">       
+                                        <a href="#" class="list-group-item list-group-item-action  "><i
+                                        class="fa-solid fa-house me-3 pd-3"></i><span style="margin-left: 20px;">Home</span></a>
+                                                      
+                                        <a href="#" class="list-group-item list-group-item-action "><i
+                                        class="fa-solid fa-file-invoice me-3"></i><span style="margin-left:14px">Invoices</span></a>
+                               
+                                        <a href="#" class="list-group-item list-group-item-action  "><i
+                                        class="fa-solid fa-users me-3"></i><span style="margin-left: 20px">Clients</span></a>
+                               
+                                        <a href="#" class="list-group-item list-group-item-action  "><i
+                                        class="fa-solid fa-tag me-3"></i><span style="padding: 10px">Products</span></a>
+                              
+                                        <a href="#" class="list-group-item list-group-item-action "><i
+                                        class="fa-solid fa-message me-3"></i><span style="padding: 10px">Messages</span></a>
+                               
+                                        <a href="#" class="list-group-item list-group-item-action "><i
+                                        class="fa-sharp fa-solid fa-gear me-3"></i><span style="padding: 20px">Setting</span></a>
+                               
+                                        <a href="#" class="list-group-item list-group-item-action "><i
+                                        class="fa-solid fa-circle-question me-3"></i><span style="padding: 20px">Helps</span></a>
+                               
+                                        <a href="#" class="list-group-item list-group-item-action  "><i
+                                        class="fa-solid fa-right-from-bracket me-3"></i><span style="padding: 10px">Logout</span></a>
                                 </li>
                             </ul>
-                        </li>
-                        <!-- Avatar -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
-                                aria-expanded="false">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg"
-                                    class="rounded-circle" height="22" alt="" loading="lazy" />
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">My profile</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                        </nav>
+                    </div>
+                </div> 
+
+                <!---Container firt cont -->
+                <div class="container first_cont">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Total Revenue</div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Invoices</div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Client</div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Loyality</div>
+                    </div>
+
+                  <div class="row second_row mt-4">
+                      <div class="col-md-8 col-sm-6 col-xs-12 mt-2 rounded"></div>
+                      <div class="col-md-4 col-sm-6 col-xs-12 mt-2 rounded"></div>
+                  </div>
+                  <div class="row third_row mt-2">
+                    <div class="col-md-8 col-sm-6 col-xs-12 mt-2 rounded"></div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 mt-2 rounded"></div>
                 </div>
-                <!-- Container wrapper -->
-            </nav>
-            <!-- Navbar -->
-          </header>
-            <div class="container first_cont">
-              <div class="row">
-                  <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Total Revenue</div>
-                  <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Invoices</div>
-                  <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Client</div>
-                  <div class="col-md-3 col-sm-6 col-xs-12 mt-2 rounded">Loyality</div>
-              </div>
-            <div class="row second_row mt-4">
-                <div class="col-md-8 col-sm-6 col-xs-12 mt-2 rounded"></div>
-                <div class="col-md-4 col-sm-6 col-xs-12 mt-2 rounded"></div>
+                </div>
+
             </div>
-          </div>
-       </div>
-    </section>
-    
+        </section>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+    });
+</script>
 </body>
 </html>
